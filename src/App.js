@@ -15,8 +15,6 @@ function App() {
   const [userId, setUserId] = useState("");
   const [userName, setUserName] = useState("");
 
-  console.log('userId', userId)
-
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
@@ -28,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
       <Navbar name={userName}/>
         <Routes>
           <Route path="/login" element={<Login />} />
@@ -36,7 +34,8 @@ function App() {
           <Route path="/" element={<Home userId={userId}/>} />
           <Route path="/PlasticDetection" element={<PlasticDetection/>}/>
         </Routes>
-      </Router>
+      </Router> */}
+      <PlasticDetection />
     </div>
   );
 }
