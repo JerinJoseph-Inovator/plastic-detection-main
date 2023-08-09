@@ -1,0 +1,49 @@
+.cardGrid{
+  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-items: start;
+        gap: 1.438rem;
+}
+
+.card{
+  
+  position: relative; top: 2rem; left: 1rem;
+  background: white;
+  color: black;
+  padding: 5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 150ms ease-in-out;
+  cursor: pointer;
+  }
+
+
+
+
+.homeContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonsContainer {
+  display: flex;
+  margin: 100px 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.uploadsBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadImageContainer{
+    height: 350px;
+    display: grid;
+    place-items: center;
+}
